@@ -1,0 +1,7 @@
+.env
+node_modules
+obavijesti.json
+data
+config
+debug
+debug*
