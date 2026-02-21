@@ -3,15 +3,15 @@
 **Notifier** je Node.js aplikacija za automatsko dohvaćanje i slanje obavijesti s internetskih stranica (ili bilo kojeg portala s obavijestima) na **Discord** putem webhookova.
 
 Program automatski:
-- 🔍 dohvaća obavijesti za više predmeta (svaki sa svojim URL-om)
-- 🔁 ponovno se prijavljuje ako sesija istekne
-- 🍪 sinkronizira kolačiće (`tough-cookie`)
-- 🔐 podržava *Compound login* sustav (SSO)
-- 💬 šalje obavijesti na Discord s poštivanjem *rate limita*
-- 🧠 automatski kreira sve potrebne konfiguracijske datoteke pri prvom pokretanju
+-  dohvaća obavijesti za više predmeta (svaki sa svojim URL-om)
+-  ponovno se prijavljuje ako sesija istekne
+-  sinkronizira kolačiće (`tough-cookie`)
+-  podržava *Compound login* sustav (SSO)
+-  šalje obavijesti na Discord s poštivanjem *rate limita*
+-  automatski kreira sve potrebne konfiguracijske datoteke pri prvom pokretanju
 
 
-## 🚀 Značajke
+## Značajke
 
 ✅ Podrška za praćenje obavijesti s više predmeta       
 ✅ Automatsko prepoznavanje strukture obavijesti  
@@ -41,20 +41,20 @@ node index.js
 
 ---
 
-## **🧩 Interaktivni vodič pri prvom pokretanju [U RAZVOJU]**
+## ** Interaktivni vodič pri prvom pokretanju [U RAZVOJU]**
 Pri prvom pokretanju, program automatski pokreće interaktivni setup, koji te pita za:
 
-👤 USERNAME – tvoje korisničko ime za stranicu
+ USERNAME – tvoje korisničko ime za stranicu
 
-🔑 PASSWORD – lozinku za prijavu
+ PASSWORD – lozinku za prijavu
 
-🌐 WEBSITE – osnovni URL stranice (npr. https://www.skola.hr)
+ WEBSITE – osnovni URL stranice (npr. https://www.skola.hr)
 
-📘 Naziv predmeta
+ Naziv predmeta
 
-🔗 URL obavijesti za taj predmet
+ URL obavijesti za taj predmet
 
-💬 Discord webhook URL
+ Discord webhook URL
 
 Nakon unosa, automatski se stvaraju:
 
@@ -78,7 +78,7 @@ notifier/
 └── .env                     # Login podaci i osnovna konfiguracija
 ```
 
-## 🧠 Primjer konfiguracije
+##  Primjer konfiguracije
 
 `.env`
 ```env
@@ -107,7 +107,7 @@ WEBSITE="https://nastava.skola.hr"
 ```
 
 
-## 🔔 Kako radi
+##  Kako radi
 
 1. Program se prijavljuje na web stranicu pomoću zadanih korisničkih podataka.
 2. Parsira HTML obavijesti pomoću Cheerio.
@@ -115,13 +115,13 @@ WEBSITE="https://nastava.skola.hr"
 4. Nove obavijesti automatski šalje na pripadajući Discord kanal putem webhooka.
 5. Ciklus se ponavlja svakih 5 minuta.
 
-🛠️ Rukovanje sesijom
+ Rukovanje sesijom
 
 Ako sesija istekne ili se pojavi Compound login redirect, program:
 - automatski detektira potrebu za ponovnim loginom
 - ponovno se prijavljuje bez prekida rada
 
-## 📚 LICENCA
+##  LICENCA
 
 Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0)
 
@@ -138,10 +138,10 @@ u komercijalne projekte bez prethodnog pisanog dopuštenja autora.
 Ovaj program koristi web scraping isključivo u edukativne svrhe.
 Autor ne potiče, ne podržava i ne preuzima odgovornost za bilo kakvu zloupotrebu alata.
 
-📚 Svrha projekta je demonstracija tehnika za dohvaćanje i obradu javno dostupnih informacija.
+ Svrha projekta je demonstracija tehnika za dohvaćanje i obradu javno dostupnih informacija.
 
-🚫 Ne koristi se za zaobilaženje autentikacije, plaćenih sadržaja ili kršenje pravila korištenja web stranica.
+ Ne koristi se za zaobilaženje autentikacije, plaćenih sadržaja ili kršenje pravila korištenja web stranica.
 
-💡 Preporučuje se uvijek provjeriti pravila korištenja (Terms of Service) web stranice prije bilo kakvog automatiziranog pristupa.
+ Preporučuje se uvijek provjeriti pravila korištenja (Terms of Service) web stranice prije bilo kakvog automatiziranog pristupa.
 
-⚖️ Autor ne snosi odgovornost za moguće kršenje zakona, ograničenja pristupa ili uvjeta korištenja od strane korisnika.
+ Autor ne snosi odgovornost za moguće kršenje zakona, ograničenja pristupa ili uvjeta korištenja od strane korisnika.
